@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floor Generator - Blender Addon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+<div class="product-container">
+    <header class="product-header">
+        <h1 class="product-title">Floor Generator</h1>
+        <p class="product-subtitle">Geometry Nodes powered add-on for creating floor boards and tiles</p>
+    </header>
+
+    <section class="product-media">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/watch?v=g0f-NMgmSZw&ab_channel=NodeCrafted" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="product-details">
+        <h2>Add Floor Generator to any mesh object</h2>
+        <p>Generate flooring boards and tiles on any shape mesh object with one click.</p>
+        <img src="https://assets.superhivemarket.com/cache/d6e05f733787f940e500014634bb5ca9.gif" alt="MultiTexture Node Setup">
+    </section>
+
+    <section class="product-grid-container">
+        <h2>Available Flooring Patterns</h2>
+        <p>Easily switch between patterns from the drop-down menu at any time. </p>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/539684fb226e7e86738efd89e247eb24.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Standard</h3>
+                    <p class="card-description">Most popular flooring pattern, versatile for any room, and ideal for creating a clean, spacious look.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/bd851fa111e492623850e08a2510d1f7.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Standard (specified sizes)</h3>
+                    <p class="card-description">Standard flooring pattern with the option to include up to five different board sizes, arranged either in a random or ordered layout.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/76f9bac33f0d5529a145f124eb88c510.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Herringbone</h3>
+                    <p class="card-description">A classic, elegant pattern often used in living rooms, hallways, and upscale interiors to add a sense of movement and sophistication.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/059f9063b08ff6cb19fa9913a677069b.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Chevron</h3>
+                    <p class="card-description">Similar to herringbone but with a sharper, more contemporary look, popular in modern and luxurious spaces.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/552ee9adfaf144ed9b879f9fa7fa93d6.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Hexagon</h3>
+                    <p class="card-description">Popular in bathrooms, kitchens, and feature areas to create a stylish, geometric aesthetic.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.superhivemarket.com/cache/27215a180fa06312322c228cd380ddf5.gif" alt="Product Name" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Basket Weave</h3>
+                    <p class="card-description">Traditional pattern often used in classic interiors, entryways, or formal spaces to evoke timeless craftsmanship.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="product-media">
+        <h2>Clapboard Effect</h2>
+        <p>For the standard floor pattern, it's possible to add a clapboard effect, which is perfect for creating house wood siding or roofing.</p>
+        <img src="https://assets.superhivemarket.com/cache/68d9dc0c7462bc26febc7f3958faa282.jpg" style="width:50%;" alt="Clapboard Effect">
+    </section>
+
+    <section class="product-details">
+        <h2>Material Options</h2>
+        <p>There are two primary material options for the <span class="highlight">Floor Generator</span>:</p>
+        <ol>
+            <li><span class="highlight">MultiTexture:</span> Allows you to use a separate texture for every board or tile.</li>
+            <li><span class="highlight">Seamless Texture:</span> Uses a single seamless texture, with each board getting a unique random offset.</li>
+        </ol>
+
+        <h3>MultiTexture Workflow</h3>
+        <p>The <span class="highlight">MultiTexture</span> Node allows you to use up to 16 different textures. Simply add your textures in the Shader Editor and connect them to the inputs. This node can also be used with just RGB color inputs to create fully procedural materials without image textures.</p>
+        <img src="https://assets.superhivemarket.com/cache/8cff1b381d818c69a83aa996088c804b.jpg" alt="MultiTexture Node Setup">
+        <img src="https://assets.superhivemarket.com/cache/c256d6bde413840159e122653dfd8bf0.jpg" alt="Procedural MultiTexture Material">
+
+        <h3>Seamless Texture Workflow</h3>
+        <p>This method uses one seamless texture. The <span class="highlight">FloorGenerator</span> unwraps each board to a random position in the UV space, ensuring each board has a unique, non-repeating look.</p>
+        <img src="https://assets.superhivemarket.com/cache/56977a3ed8c8144ff60333859bdad6ec.jpg" alt="Seamless Texture Unwrapping">
+
+        <h2>Asset Browser Library</h2>
+        <p>For quick access, add the <span class="highlight">FloorGenerator</span> and materials to the Asset Browser in Blender. This package includes <span class="highlight">56 pre-made materials</span> to get you started:</p>
+        <ul>
+            <li>35 MultiTexture wood flooring materials</li>
+            <li>2 Seamless wood flooring materials</li>
+            <li>19 MultiTexture tile materials</li>
+        </ul>
+        <img src="https://assets.superhivemarket.com/cache/d399d15150aa3ca7c5f0f65fb439496a.jpg" alt="Asset Browser Library">
+
+        <h2>Advanced Masking</h2>
+        <p>To mask textures and materials, you can use three attributes: <span class="highlight">Bevel</span>, <span class="highlight">Sides</span>, and <span class="highlight">Grout</span>. Use their factor outputs with Mix Color or Mix Shader nodes for detailed control.</p>
+        <img src="https://assets.superhivemarket.com/cache/d67e3a604ae48a7a467c8da6d4dcc99f.jpg" alt="Attribute Masking">
+        <img src="https://assets.superhivemarket.com/cache/56580444121aca4431ac9f708e465c6a.jpg" alt="Advanced Masking Example">
+
+    </section>
+</div>
+
+</body>
+</html>
