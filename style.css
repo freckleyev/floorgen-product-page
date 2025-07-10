@@ -23,7 +23,6 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     background-color: var(--bg);
-    box-shadow: var(--shadow);
     border-radius: var(--radius);
     border-bottom: 1px solid var(--accent-soft);
     overflow: hidden;
